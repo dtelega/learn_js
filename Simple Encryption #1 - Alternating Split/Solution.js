@@ -1,5 +1,5 @@
 function encrypt(text, n) {
-  if (!n)
+  if (n <= 0)
     return text;
   while (n) {
     var a = "";
