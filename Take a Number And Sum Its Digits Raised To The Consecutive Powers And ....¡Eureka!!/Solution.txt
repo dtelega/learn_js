@@ -1,0 +1,14 @@
+function sumDigPow(a, b) {
+  var tab = new Array();
+  for (var i = a; i <= b; i++) {
+    var res = 0;
+    var copy_i = i.toString();
+    var degree = 1;
+    for (var k = 0; k < copy_i.length; k++) {
+      res += Math.pow(parseInt(copy_i[k], 10), degree++);
+    }
+    (res == i) ? tab[tab.length] = i : 0;
+ }
+  return tab;
+}
+
